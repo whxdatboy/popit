@@ -31,7 +31,15 @@
       z-index: -1;
       margin: -5px;
       border-radius: inherit;
-      background: linear-gradient(to bottom, rgb(255, 0, 0), rgb(255, 255, 0), rgb(0, 173, 0), rgb(0, 0, 255), rgb(116, 235, 235), rgb(128, 0, 128));
+      background: linear-gradient(
+        to bottom,
+        rgb(255, 0, 0),
+        rgb(255, 255, 0),
+        rgb(0, 173, 0),
+        rgb(0, 0, 255),
+        rgb(116, 235, 235),
+        rgb(128, 0, 128)
+      );
     }
   }
 
@@ -39,6 +47,7 @@
     display: flex;
     border: 1px solid var(--color-theme);
     border-radius: 20px;
+    background: var(--color-theme);
   }
 
   &-item {
@@ -47,11 +56,12 @@
     align-items: center;
     justify-content: center;
     margin: 10px;
-    border: 1px solid var(--color-theme);
+    border: 1px solid rgba(130, 130, 130, 0.2);
     border-radius: 50px;
     width: 50px;
     height: 50px;
     background: var(--color-theme);
+    cursor: pointer;
 
     &::after {
       content: "";
@@ -63,6 +73,49 @@
       border-radius: inherit;
       background: radial-gradient(circle at center, #fff, rgba(160, 160, 160, 0.3) 100%);
       opacity: 0.3;
+    }
+  }
+}
+
+.theme-lazure .popit-item {
+  &::after {
+    background: radial-gradient(circle at center, #fff, rgba(0, 255, 255, 1) 100%);
+  }
+}
+
+.theme-blue .popit-item {
+  &::after {
+    background: radial-gradient(circle at center, #fff, rgb(0, 60, 255) 100%);
+  }
+}
+
+.theme-purple .popit-item {
+  border: 1px solid rgba(46, 46, 46, 0.3);
+}
+
+.theme-green .popit-item {
+  &.popit-item-active {
+    &::after {
+      // background: radial-gradient(
+      //   circle at center,
+      //   rgba(0, 0, 0, 0.9) 5%,
+      //   rgba(0, 0, 0, 0.5) 20%,
+      //   rgba(16, 85, 34, 0.5) 30%,
+      //   rgba(16, 85, 34, 0.7) 50%,
+      //   rgba(255, 255, 255, 0.3) 60%
+      // );
+      background: radial-gradient(
+        circle,
+        rgba(182, 182, 182, 0.8855917366946778) 4%,
+        rgba(170, 166, 166, 0.8855917366946778) 15%,
+        rgba(112, 112, 112, 0.8715861344537815) 25%,
+        rgba(101, 101, 101, 0.9023984593837535) 51%,
+        rgba(130, 130, 130, 0.8827906162464986) 69%,
+        rgba(116, 116, 116, 0.896796218487395) 79%,
+        rgba(111, 111, 111, 0.9023984593837535) 82%,
+        rgba(73, 73, 73, 0.8939950980392157) 93%,
+        rgba(255, 255, 255, 0.8799894957983193) 100%
+      );
     }
   }
 }

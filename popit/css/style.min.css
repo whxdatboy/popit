@@ -473,11 +473,11 @@ ul {
 }
 
 .theme-blue {
-  --color-theme: rgb(0, 0, 255);
+  --color-theme: rgb(26, 26, 160);
 }
 
 .theme-lazure {
-  --color-theme: rgb(116, 235, 235);
+  --color-theme: rgb(65, 214, 214);
 }
 
 .theme-purple {
@@ -526,6 +526,7 @@ ul {
   display: flex;
   border: 1px solid var(--color-theme);
   border-radius: 20px;
+  background: var(--color-theme);
 }
 
 .popit-item {
@@ -534,11 +535,12 @@ ul {
   align-items: center;
   justify-content: center;
   margin: 10px;
-  border: 1px solid var(--color-theme);
+  border: 1px solid rgba(130, 130, 130, 0.2);
   border-radius: 50px;
   width: 50px;
   height: 50px;
   background: var(--color-theme);
+  cursor: pointer;
 }
 
 .popit-item::after {
@@ -551,6 +553,22 @@ ul {
   border-radius: inherit;
   background: radial-gradient(circle at center, #fff, rgba(160, 160, 160, 0.3) 100%);
   opacity: 0.3;
+}
+
+.theme-lazure .popit-item::after {
+  background: radial-gradient(circle at center, #fff, cyan 100%);
+}
+
+.theme-blue .popit-item::after {
+  background: radial-gradient(circle at center, #fff, #003cff 100%);
+}
+
+.theme-purple .popit-item {
+  border: 1px solid rgba(46, 46, 46, 0.3);
+}
+
+.theme-green .popit-item.popit-item-active::after {
+  background: radial-gradient(circle, rgba(182, 182, 182, 0.885592) 4%, rgba(170, 166, 166, 0.885592) 15%, rgba(112, 112, 112, 0.871586) 25%, rgba(101, 101, 101, 0.902398) 51%, rgba(130, 130, 130, 0.882791) 69%, rgba(116, 116, 116, 0.896796) 79%, rgba(111, 111, 111, 0.902398) 82%, rgba(73, 73, 73, 0.893995) 93%, rgba(255, 255, 255, 0.879989) 100%);
 }
 
 @media (max-width: 1024px) {
