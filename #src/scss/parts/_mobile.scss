@@ -1,0 +1,15 @@
+.hero {
+  height: 100%;
+}
+
+.start {
+  margin-top: 10px;
+  background-position-y: 101%;
+}
+
+.footer {
+  &__container {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+}

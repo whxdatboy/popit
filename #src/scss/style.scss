@@ -1,0 +1,21 @@
+@import "./mixins/font-face";
+@import "mixins";
+@import "fonts";
+@import "vendor";
+@import "settings";
+@import "vars";
+
+// styles
+@import "./components/main";
+
+@media (max-width: 1024px) {
+  @import "../scss/parts/tablet";
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  @import "../scss/parts/mobile";
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  @import "../scss/parts/mobile_xs";
+}

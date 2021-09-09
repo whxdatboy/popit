@@ -1,0 +1,56 @@
+.container {
+  width: 100%;
+  max-width: 1024px;
+}
+
+.capabilities__container,
+.working__container,
+.start__container,
+.subscribe__container {
+  padding: 0 100px;
+}
+
+.hero {
+  height: 93vh;
+  background-size: 100%;
+}
+
+.header {
+  &__container {
+    padding: 20px 100px;
+  }
+}
+
+.main {
+  &__content {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
+.capabilities {
+  &__container {
+    flex-wrap: wrap;
+  }
+}
+
+.start {
+  margin-top: 80px;
+  height: auto;
+  background-position-y: 0%;
+  background-size: 110%;
+
+  &__container {
+    padding: 100px;
+  }
+
+  &-title {
+    margin: 0 auto 20px;
+  }
+}
+
+.footer {
+  &__container {
+    padding: 30px 100px;
+  }
+}

@@ -1,0 +1,27 @@
+:root {
+  --color-theme: #000;
+}
+
+.theme-red {
+  --color-theme: rgb(255, 0, 0);
+}
+
+.theme-yellow {
+  --color-theme: rgb(255, 255, 0);
+}
+
+.theme-green {
+  --color-theme: rgb(0, 173, 0);
+}
+
+.theme-blue {
+  --color-theme: rgb(0, 0, 255);
+}
+
+.theme-lazure {
+  --color-theme: rgb(116, 235, 235);
+}
+
+.theme-purple {
+  --color-theme: rgb(128, 0, 128);
+}

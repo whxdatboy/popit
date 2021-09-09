@@ -1,0 +1,11 @@
+@mixin tablet {
+  @media (max-width: (1024px)) {
+    @import "../parts/tablet";
+  }
+}
+
+@mixin mobile {
+  @media (max-width: (768px)) {
+    @import "../parts/mobile";
+  }
+}
